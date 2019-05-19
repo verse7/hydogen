@@ -1,7 +1,5 @@
 # Hydrogen
 
-# Instructions for use
-
 Remember to always create a virtual environment and install the packages in your requirements.txt file
 
 ## Commands for creating virtual environment
