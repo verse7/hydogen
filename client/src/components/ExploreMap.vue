@@ -1,10 +1,11 @@
 <template>
-  <div id="map"></div>
+  <div id="exploreMap"></div>
 </template>
 
 <script>
+
 export default {
-  name: 'Map',
+  name: 'ExploreMap',
   data: function() {
     return {
       map: null
@@ -15,7 +16,7 @@ export default {
  
     mapboxgl.accessToken = 'pk.eyJ1IjoiemRtd2kiLCJhIjoiY2l6a3EyOW1wMDAzbjJ3cHB2aHQ5a2N1eCJ9.xOIXUuzA4pJt7cLIR-wUSg';
     this.map = new mapboxgl.Map({
-    container: 'map',
+    container: 'exploreMap',
     style: 'mapbox://styles/mapbox/streets-v11'
     });
   }
@@ -23,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  #map {
+  #exploreMap {
     height: 100vh;
   }
 </style>

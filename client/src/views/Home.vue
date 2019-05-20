@@ -1,17 +1,21 @@
 <template>
   <div class="home">
-    <Map/>
+    <Header />
+    <ExploreMap/>
+    <Footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Map from '@/components/Map.vue';
+import ExploreMap from '@/components/ExploreMap.vue';
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'home',
   components: {
-    Map,
+    ExploreMap, Header, Footer
   },
 };
 </script>
