@@ -40,12 +40,16 @@
 </template>
 
 <script>
-import ResourceCard from './ResourceCard'
+import ResourceCard from './ResourceCard.vue';
+import AppHeader from './AppHeader.vue';
+import ResourceDetails from './ResourceDetails.vue';
 
 export default {
   name: "ResourcePicker",
   components: {
-    ResourceCard
+    ResourceCard,
+    ResourceDetails,
+    AppHeader
   },
   data() {
     return {

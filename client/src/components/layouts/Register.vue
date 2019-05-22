@@ -34,9 +34,12 @@
 </template>
 
 <script>
+import AppHeader from '../AppHeader.vue';
+
   export default {
     name: "Register",
     props: [],
+    components: {AppHeader},
     methods: {
     register: function() {
       let self = this;

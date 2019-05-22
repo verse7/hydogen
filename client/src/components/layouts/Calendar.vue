@@ -21,8 +21,10 @@
 </template>
 
 <script>
+import AppHeader from '../AppHeader.vue';
 export default {
-  name: "",
+  name: "Calendar",
+  components: {AppHeader},
   data() {
     return {
       today: moment(),

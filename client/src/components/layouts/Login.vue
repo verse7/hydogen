@@ -31,9 +31,12 @@
 </template>
 
 <script>
+import AppHeader from '../AppHeader.vue';
+
 export default {
   name: "Login",
   props: ['notifs', 'success'],
+  components: {AppHeader},
   data: function() {
     return {
       error: false,

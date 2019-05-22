@@ -8,9 +8,12 @@
 </template>
 
 <script>
+import ResourceCard from './ResourceCard.vue';
+
   export default {
     name: "DefaultListing",
     props: ['title', 'type'],
+    components: {ResourceCard},
     data: function() {
       return {
         resources: []

@@ -17,9 +17,13 @@
 </template>
 
 <script>
+  import DefaultListing from '../DefaultListing.vue';
+  import AppHeader from '../AppHeader.vue';
+
   export default {
     name: "Home",
     props: ['notifs', 'success'],
+    components: {AppHeader, DefaultListing},
     data: function() {
       return {
 

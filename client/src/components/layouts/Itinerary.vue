@@ -5,7 +5,7 @@
 		<div class="mt-5 container">
 			<h2 class="mb-2">My Itinerary</h2>
 			<ul class="list-group" v-if="bookings.length">
-				<li v-for="booking in bookings" class="list-group-item" >{{booking.name}}</li>
+				<li v-for="booking in bookings" class="list-group-item" :key="booking">{{booking.name}}</li>
 			</ul>
 		</div>
 	</div>
@@ -24,7 +24,11 @@ export default {
       bookings: []
     }
   },
-  created: {
+  created() {
+		this.bookings = JSON.parse(localStorage.getItem('booked'));
+
+
+
     // fetch('http://api.opencaribbean.org/api/v1/booking/bookings/history?iduser=' + localStorage.current_user)
 			// .then( resp => resp.json()).then(jsonResp => {
 			// 	this.bookings = jsonResp.content;
